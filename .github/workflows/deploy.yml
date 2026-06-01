@@ -18,8 +18,15 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Prepare deploy bundle
+        run: |
+          mkdir -p deploy
+          cp -r build deploy/
+          cp server.js package.json package-lock.json deploy/
+          cd deploy && npm install --omit=dev --no-audit --no-fund
+
       - uses: azure/webapps-deploy@v2
         with:
           app-name: guide-canadien
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: build
+          package: deploy

@@ -54,7 +54,17 @@
             <audio controls preload="metadata" src={chapters[activeChapter].audioFr}>
               Votre navigateur ne supporte pas l'audio.
             </audio>
-            <small>Voix: Antoine (FR-CA)</small>
+            <div class="audio-meta">
+              <small>Voix: Antoine (FR-CA)</small>
+              <a class="download-btn" href={chapters[activeChapter].audioFr} download={`${chapters[activeChapter].id}-fr.mp3`} title="Telecharger l'audio">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Telecharger
+              </a>
+            </div>
           </div>
 
           <div class="text-content">
@@ -77,7 +87,17 @@
             <audio controls preload="metadata" src={chapters[activeChapter].audioBr}>
               Seu navegador nao suporta audio.
             </audio>
-            <small>Voz: Antonio (PT-BR)</small>
+            <div class="audio-meta">
+              <small>Voz: Antonio (PT-BR)</small>
+              <a class="download-btn" href={chapters[activeChapter].audioBr} download={`${chapters[activeChapter].id}-br.mp3`} title="Baixar audio">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                Baixar
+              </a>
+            </div>
           </div>
 
           <div class="text-content">
@@ -223,11 +243,40 @@
     height: 40px;
     border-radius: var(--radius-sm);
   }
-  .audio-player small {
-    display: block;
-    margin-top: 4px;
+  .audio-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6px;
+    gap: 8px;
+  }
+  .audio-meta small {
     font-size: 0.7rem;
     color: var(--gray-600);
+  }
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    background: white;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--gray-700);
+    transition: all 0.15s;
+    text-decoration: none;
+  }
+  .download-btn:hover {
+    border-color: var(--red);
+    color: var(--red);
+    background: #FFF5F5;
+  }
+  .lang-br .download-btn:hover {
+    border-color: #2E8B57;
+    color: #2E8B57;
+    background: #F0FFF4;
   }
 
   .text-content {
