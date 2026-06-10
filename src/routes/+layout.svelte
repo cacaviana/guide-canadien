@@ -22,6 +22,7 @@
       <a href="/">Mapa</a>
       <a href="/simulado">Simulado</a>
       <a href="/estudo">Estudo</a>
+      <a href="/livre">Livre</a>
     </div>
   </div>
 </nav>

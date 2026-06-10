@@ -45,8 +45,8 @@ O Canada nao impoe servico militar obrigatorio, mas servir nas Forcas canadenses
     title: 'Qui sommes-nous?',
     titleBr: 'Quem somos nos?',
     icon: '&#129309;',
-    audioFr: '/audio/02-qui-fr.mp3',
-    audioBr: '/audio/02-qui-br.mp3',
+    audioFr: '/audio/02-qui-sommes-nous-fr.mp3',
+    audioBr: '/audio/02-qui-sommes-nous-br.mp3',
     textFr: `Le Canada est issu de trois peuples fondateurs: les Autochtones, les Francais et les Britanniques. Comprendre ces racines aide a comprendre l'identite canadienne moderne.
 
 Les peuples autochtones sont arrives en Amerique du Nord il y a plusieurs milliers d'annees. Aujourd'hui, ils se divisent en trois groupes distincts. Les Premieres Nations representent environ soixante-cinq pour cent des Autochtones. Les Metis, nes de l'union entre Autochtones et Europeens, comptent pour environ trente pour cent et vivent surtout dans les provinces des Prairies. Les Inuits, dont le nom signifie le peuple en langue inuktitute, vivent dans l'Arctique et representent environ quatre pour cent.
@@ -139,8 +139,8 @@ O Canada se destaca por suas grandes invencoes e descobertas. Alexander Graham B
     title: 'Systeme de gouvernement',
     titleBr: 'Sistema de governo',
     icon: '&#127963;',
-    audioFr: '/audio/05-gouv-fr.mp3',
-    audioBr: '/audio/05-gouv-br.mp3',
+    audioFr: '/audio/05-gouvernement-fr.mp3',
+    audioBr: '/audio/05-gouvernement-br.mp3',
     textFr: `Trois faits principaux caracterisent le systeme de gouvernement du Canada. Notre pays est un Etat federal, une democratie parlementaire et une monarchie constitutionnelle.
 
 Il existe un gouvernement federal, des gouvernements provinciaux et territoriaux, et des administrations municipales. Les responsabilites du gouvernement federal et des gouvernements provinciaux ont ete definies en mille huit cent soixante-sept dans la Loi constitutionnelle.
